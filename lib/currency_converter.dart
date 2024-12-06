@@ -6,24 +6,25 @@ class CurrencyConverter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.white,
+        backgroundColor: Colors.white,
         body: Center(
-          child: Column(
+            child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Currency Coverter',
-            style: TextStyle(
-              fontSize: 30.0, 
-              fontWeight: FontWeight.w700,
-              fontFamily: 'Times New Roman',
-              color: Colors.black,
+            Text(
+              'Currency Coverter',
+              style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.w700,
+                fontFamily: 'Times New Roman',
+                color: Colors.black,
               ),
             ),
             TextField(
               style: TextStyle(
-                color: Colors.black,   
+                color: Colors.black,
               ),
-            decoration: InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Enter Amount in USD:',
                 labelStyle: TextStyle(
                   fontSize: 20.0,
@@ -34,14 +35,14 @@ class CurrencyConverter extends StatelessWidget {
                 hintStyle: TextStyle(
                   color: Colors.grey,
                 ),
+                prefix: Icon(Icons.monetization_on),
                 helperText: 'This is to change from 1 currency to another',
-                helperStyle: TextStyle(
-                  color: Colors.grey), 
-            ),
+                helperStyle: TextStyle(color: Colors.grey),
+              ),
             ),
             TextField(
               style: TextStyle(
-                color: Colors.black,   
+                color: Colors.black,
               ),
               decoration: InputDecoration(
                 labelText: 'Currency you want to convert to:',
@@ -54,15 +55,14 @@ class CurrencyConverter extends StatelessWidget {
                 hintStyle: TextStyle(
                   color: Colors.grey,
                 ),
+                prefixIcon: Icon(Icons.monetization_on),
                 helperText: 'This is the currency to convert to',
                 helperStyle: TextStyle(
                   color: Colors.grey,
                 ),
-                ),
               ),
+            ),
           ],
-        )
-      )
-    );
+        )));
   }
 }

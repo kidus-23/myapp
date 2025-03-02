@@ -5,7 +5,7 @@ class CurrencyConverter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final border2 = OutlineInputBorder(
+    const border2 = OutlineInputBorder(
         borderRadius: BorderRadius.horizontal(
           left: Radius.circular(3),
           right: Radius.elliptical(10, 60),
